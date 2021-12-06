@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanYU|PROFILE</title>
+    <link rel="icon" href="logo/unicorn.png" type="image/x-icon" />
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    <style>
+        
+        
+        @import url(main.css);
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img class="namelogo" src="titleimg/yanyu.png">
+        <a id="about"><img class="tit" src="titleimg/aboutme.png"></a>
+        <a id="skill"><img class="tit" src="titleimg/skills.png"></a>
+        <a id="E"><img class="tit" src="titleimg/E&W.png"></a>
+        <a id="contact"><img class="tit" src="titleimg/contactme.png"></a>
+        <button class="butt"><a style="color: white;"; href="https://linyuri.github.io/library/"><span>WEBSITE</span></a></button>
+        <audio id="music2" src="Wolfgang.wav"  loop="loop" autoplay="autoplay">你的瀏覽器不支援audio標籤。</audio>    
+        <a href="javascript:playPause();"><img class="music" src="logo/music.png" width="48" height="50" id="music_btn2" border="0"></a>  
+    </header>
+    <script>
+    
+    function playPause() 
+    {    
+        var music = document.getElementById('music2');    
+        var music_btn = document.getElementById('music_btn2');    
+        if (music.paused)
+        {    
+            music.play();    
+            music_btn.src = 'logo/music.png';    
+        }    
+        else
+        {    
+            music.pause();    
+            music_btn.src = 'logo/music.png';     
+        }    
+    }  
+    $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({
+                    scrollTop:0
+                },700);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 430){
+                    $('#gotop,#about,#skill').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+        $(function () {
+        
+        var city_top = $('.section2').offset().top;
+        $('#about').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section3').offset().top;
+        $('#skill').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section5').offset().top;
+        $('#E').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section6').offset().top;
+        $('#contact').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+     </script>
+     <script>
+       
+     </script>
+
+     <a href="#" id="gotop"> ^ </a>
+    <section>
+    <div>
+        <img class="img" src="bg/page.jpg">
+        <p id="titfont">"Alaways try our best to do every things."</p>
+    </div>
+    <div class="section2">
+        <table style="padding: 10px; margin: 20px;">
+            <tr style="height: 100px;">
+                <td></td>
+            </tr>
+            <tr> 
+                <td style="width: 100px;"></td>
+                <td style="text-align: center;"><p style="font-family: A ;font-size: 50pt;">About Me</p></td>
+                <td style="width: 100px;"></td>
+                <td colspan="2"><div class="photo"><img  src="photo/photo.png"><p style="text-align: center; font-family:A; font-size: 30pt;">YanYULIN</p></td>
+                <td style="width: 100px;"></td>
+                <td colspan="2" style=" width: 900px;"><p class="tit2" style="font-family: NO;font-size: 30pt;"><span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>認為自己沒有才能的話，大概一輩子都不會有了。</p></td>
+            </tr>
+            
+        </table>
+        <table class="table1" >
+            <tr><div>
+                <td colspan="2"><img class="introimg" style="width: 300px;" src="photo/photo2.jpg"><p style="font-size: 30pt; color:rgba(165, 137, 85, 0.897)"><img style="width: 50px;" src="logo/avatar.png">關於我:</p></td>
+                <td style="width: 100px; height: 300px;"></td>
+                <td colspan="2" style="text-align: center;">
+                    <p class="introp">
+                    <img style="width: 30px;" src="logo/star.png">
+                    嗨~我叫林晏羽，目前就讀於桃園市中壢區的中原大學的資訊管理學系。我的個性平易近人，很好相處，稍微有點社交恐懼，但其實我是外冷內熱的類型!
+                    平時喜歡聽J-POP、看電影、玩電玩。因為對電玩遊戲方面非常有興趣，所以選讀了資管這門科系。在讀了資管系之後，也讓我更加確定自己對於程式設計的熱愛，讓我更確信了自己未來要走的路。
+                    </p>
+                </td>
+            </tr> 
+        </table>
+        </div>
+       
+    </table>
+    </div>
+    </div>
+    </div>
+
+    <div class="section3">
+        <!--Skillbox-->
+        <p style="padding: 50px; font-size: 40px; font-family: A; text-align: center; padding-bottom: 0;"><a name="skills"><img style="width: 30px;" src="logo/cherry-blossom.png">Software Skills</a><img style="width: 30px;" src="logo/cherry-blossom.png"></p><p style="text-align: center; font-size: 15pt; color: rgba(165, 137, 85, 0.897);"><img style="width: 30px;" src="logo/falling-star.png">因為從大一上了資訊管理系才開始接觸程式語言，基本上是一個程式初學者。雖然一開始學的有些吃力，<br>但是經過學習各類不同的前、後端語言，我對於寫程式也愈加精熟。</p>
+        </p>
+        <div style="border: rgba(180, 159, 102, 0.856) dotted 10px; border-radius: 35px;width: 90%; margin: auto;">
+        <div class="center">
+           
+            <div class="skillbox">
+                <p>Html5<img class="logo" src="logo/html-file.png" style="width: 30px;"></p>
+                <p>80%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width: 80%; background: rgb(245, 112, 112);"></div>
+                </div>
+            </div>
+            <div class="skillbox">
+                <p>CSS<img class="logo" src="logo/css-file-format.png" style="width: 30px;"></p>
+                <p>75%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skillbox">
+                <p>Java<img class="logo" src="logo/java.png" style="width: 30px;"></p>
+                <p>90%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width:90%; background: rgb(161, 58, 58);"></div>
+                </div>
+            </div>
+            <div class="skillbox">
+                <p>C++<img class="logo" src="logo/c.png" style="width: 30px;"></p>
+                <p>85%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width: 85%; background: rgb(248, 248, 150);"></div>
+                </div>
+            </div>
+            <div class="skillbox">
+                <p>javascript<img class="logo" src="logo/javascript.png" style="width: 30px;"></p>
+                <p>40%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width: 40%;  background: palevioletred;"></div>
+                </div>
+            </div>
+            <div class="skillbox">
+                <p>Python<img class="logo" src="logo/python.png" style="width: 30px; "></p>
+                <p>45%</p>
+                <div class="skill">
+                    <div class="skilllevel" style="width: 45%; background: rgb(148, 148, 241);"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="section4">
+        <table>
+            <tr>
+                <td><p style=" font-size: 40px;text-align: center; width: 1200px; font-family: A; margin-top: 2%;"><img style="width: 30px;" src="logo/alpine.png">Other Skills<img style="width: 30px;" src="logo/alpine.png"></p><p style="text-align: center; font-size: 15pt; color: rgba(165, 137, 85, 0.897);"><img style="width: 30px;" src="logo/falling-star.png">除了科系中學習的科目，我私底下學習的其他技能</p></td>
+            </tr>
+        </table>
+        
+        <table style="margin: auto; width: 90%; border: dotted 4px rgba(132, 86, 170, 0.493); border-radius: 10px; padding: 2%; box-sizing: border-box;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, .5);">
+
+            
+            <tr>
+                <td><img class="interest" src="logo/translation.png"></td>
+                <td><img class="interest" src="logo/dictionary.png"></td>
+                <td><img class="interest" src="logo/coding.png"></td>
+                <td><img class="interest" src="logo/palette.png"></td>
+                <td><img class="interest" src="logo/application.png"></td>
+            </tr>
+            <tr>
+                <td><p class="interestp">Japanese</p><p class="interestpch">日語</p></td>
+                <td><p class="interestp">English</p><p class="interestpch">英語</p></td>
+                <td><p class="interestp">Coding</p><p class="interestpch">程式設計</p></td>
+                <td><p class="interestp">Art</p><p class="interestpch">美工</p></td>
+                <td><p class="interestp">Paperwork</p><p class="interestpch">文書處理</p></td>
+            </tr>
+            <tr>
+                <td><div class="skill2" style="width: 80%; "><div class="skilllevel2" style="width: 40%;"></div></div><p class="interestpnum">40%</p></td>
+                <td><div class="skill2" style="width: 80%; "><div class="skilllevel2" style="width: 60%; background: cornflowerblue;"></div></div><p class="interestpnum">60%</p></td>
+                <td><div class="skill2" style="width: 80%; "><div class="skilllevel2" style="width: 50%; background: rgb(139, 116, 241);"></div></div><p class="interestpnum">50%</p></td>
+                <td><div class="skill2" style="width: 80%; "><div class="skilllevel2" style="width: 45%; background: rgb(240, 185, 140);"></div></div><p class="interestpnum">45%</p></td>
+                <td><div class="skill2" style="width: 80%; "><div class="skilllevel2" style="width: 50%; background: rgb(238, 221, 144);"></div></div><p class="interestpnum">50%</p></td>
+            </tr>
+        </table>
+        
+        </div>
+        
+         <div class="section5">
+             <table>
+                <tr>
+                    <td><p style="padding-left: 10px; width:1200px; text-align: center;  font-family: A; font-size: 30pt;"><img style="width: 30px;" src="logo/flowers.png">Education/Experience<img style="width: 30px;" src="logo/flowers.png"></p><p style="text-align: center; font-size: 15pt; color: rgba(165, 137, 85, 0.897);"><img style="width: 30px;" src="logo/falling-star.png">有關我的學歷以及經歷...</p></td>
+                    
+                </tr>
+             </table> 
+            <table>
+            <tr>
+            
+            
+            <td style="padding-left: 20px;" colspan="2">
+                <table>
+                <div class="timeline">
+                    <div class="timelinep">
+                        
+                        
+                        <div class="container">
+                          <h4>大一上學期<img style="width: 40px; " src="logo/honey.png">(企業概論)行銷初體驗:微熱山丘蜜豐糖脆蛋糕</h4><p>這是我初次參與的一個行銷專案，和同學組成一個形式的公司去討論及規劃出方案。</p>
+                        </div>
+                  
+                        <div class="container" >
+                          <h4>大一下學期<img style="width: 40px; " src="logo/children.png">(管理學)普仁國小反毒品宣導</h4><p>管理學期中期末專案。雖然因為疫情沒有辦法實體的去進行宣導，但我們用製作講解影片的方式完成了專案。在做這項作業的同時我們自己也在過程中學習到很多東西。</p>
+                        </div>
+                        <div class="container">
+                          <h4>大二上學期<img style="width: 40px; " src="logo/book-stack.png">(多媒體期中專題)張靜愚圖書館介紹網站</h4><p>多媒體程式設計期中專案，製作專題的過程中同時也讓我對於寫程式更加熟悉，也在搜尋資料的過程中學會了很多額外的知識。</p>
+                        </div>
+                        <div class="container">
+                          <h4>大二上學期<img style="width: 40px; " src="logo/pistol.png">(資料結構)ShootGame射擊遊戲設計體驗</h4><p>資料結構課上體驗到的遊戲建模設計，雖然頗為複雜，但也非常有趣。</p>
+                        </div>
+                    </div>    
+                </table>
+            </td>
+            <td>
+                <a href="https://linyuri.github.io/library/"><img class="library" style="border-radius: 5%; border: rgba(134, 133, 133, 0.164) double 10px;"  src="photo/library.png" width="400px"></a><h3 style="padding-bottom: 40px; color: rgb(90, 90, 90);">多媒體期中專案</h3>
+                <img class="library" style="border-radius: 5%;  border: rgba(135, 138, 138, 0.171) double 10px;"  src="photo/ShootGame.png" width="400px"><h3 style="color: rgb(90, 90, 90);">資料結構射擊遊戲建模體驗</h3>
+            </td>
+            
+            </tr>
+            <tr>
+                <td>
+                <table class="table2">
+                 <tr>
+                     <td style="color: rgb(8, 104, 104);padding-left: 10px; font-family: NO; font-size: 20pt; background: rgba(116, 114, 114, 0.226);"><p><img src="logo/open-book.png" style="width: 30px; margin-right:10px ;">學歷</p></td>
+                 </tr>
+                <tr>
+                    <td style="padding: 10px;font-family: NO; font-size: 15pt; background: rgba(188, 143, 143, 0.247);"><p>國小 中國大陸深圳市版田區公立花城小學</p><p>國中-高中 中國大陸私立東莞台商子弟學校</p><p>大學 桃園市私立中原大學</p></td>
+                </tr>
+                </table></td>
+                <td><table style="width: 90%;" class="table2">
+                    
+                    <tr>
+                        <td style="color: rgb(8, 104, 104);padding-left: 10px; font-family: NO; font-size: 20pt; background: rgba(85, 120, 155, 0.226);"><p><img src="logo/lifestyle.png" style="width: 30px; margin-right:10px ;">活動</p></td>
+                    </tr>
+                   <tr>
+                       <td style="padding: 10px;font-family: NO; font-size: 15pt; background: rgba(188, 143, 143, 0.247);"><p>大一 資管之夜｜演員</p><p>大二 雄屏會迎新｜家長</p><p>動物服務社社員</p></td>
+                   </tr>
+               </table>
+               
+               </td>
+                <td>
+                    
+                 <table class="table2">
+                    <tr>
+                        <td style="color: rgb(8, 104, 104);padding-left: 10px; font-family: NO; font-size: 20pt; background: rgba(86, 136, 86, 0.226);"><p><img src="logo/marketing.png" style="width: 30px; margin-right:10px ;">規劃/展望</p></td>
+                    </tr>
+                   <tr>
+                       <td style="padding: 10px;font-family: NO; font-size: 15pt; background: rgba(188, 143, 143, 0.247);"><p>近期<br>認真鑽研專業知識，並在課餘也學習一些額外的技能。</p><p>未來<br>目標考研究所，盡可能累積實習經驗，爭取未來能有更好的工作。</p></td>
+                   </tr>
+               </table>
+               </td>
+               
+
+            </tr>
+         </table>  
+                   
+
+         </div>
+         <div class="section6">
+        <table>
+            <tr>
+                <td>
+                    <p style=" font-size: 40px;text-align: center; width: 1200px; font-family: A; margin-top: 2%;"><img style="width: 30px;" src="logo/contact.png">Contact Me<img style="width: 30px;" src="logo/contact.png"></p>
+                    <p style="text-align: center; font-size: 15pt; color: rgba(165, 137, 85, 0.897);"><img style="width: 30px;" src="logo/falling-star.png">對於我或此網站如有任何問題及建議，歡迎聯絡我!!</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <p>點我寄信</p>
+                    <a href="mailto:wensy20020213@gmail.com"><img src="logo/email.png" width="100px"></a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <p>其他聯絡資訊</p>
+                    <img src="photo/jiantou.gif">
+                </td>
+            </tr>
+            
+        </table>
+         </div>
+    
+        <footer><a name="contact"></a>
+            <p>Copyright © 2021 YanYULIN<br>
+            Tel:+886906878125｜Email:wendy20020213@gmail.com</p>
+            <div><a href="https://www.instagram.com/ylen0000/"><img style="width:30px ; padding:5px;"  src="logo/instagram.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=100003885960028"><img style="width:30px ; padding:5px;" src="logo/facebook.png"></a>
+                <a href="https://line.me/ti/p/XsaYsXbHzt"><img style="width:30px ; padding:5px;" src="logo/line.png"></a></div>
+        </footer>
+    
+    
+    </section>
+    
+    
+</body>
+</html>
